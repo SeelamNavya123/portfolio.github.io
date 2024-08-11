@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seelam Navya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Seelam Navya</h1>
+            <ul>
+                <li><button class="collapsible-header" data-target="about">About</button></li>
+                <li><button class="collapsible-header" data-target="education">Education</button></li>
+                <li><button class="collapsible-header" data-target="projects">Projects</button></li>
+                <li><button class="collapsible-header" data-target="resume">Resume</button></li>
+                <li><button class="collapsible-header" data-target="contact">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="collapsible-content">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am Seelam Navya, a 4th-year Computer Science and Engineering student with a strong foundation in programming principles and web technologies.</p>
+            <p>I have experience and skills in the following areas:</p>
+            <ul>
+                <li>Programming Languages: C, Python, Java, and basics of JavaScript</li>
+                <li>Data Structures and Algorithms (DSA): Proficient in key concepts and problem-solving techniques</li>
+                <li>Web Technologies: HTML, CSS</li>
+                <li>Tools: MS Office (Excel, PowerPoint, Word)</li>
+            </ul>
+            <p>I am highly motivated with excellent communication skills and a practical approach to teamwork. I am eager to take on additional responsibilities and contribute effectively to team goals throughout my career.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="collapsible-content">
+            <h2 id="education-heading">Education</h2>
+            <ul>
+                <li>Schooling: K.G.B.V. School with 9.8 GPA</li>
+                <li>Intermediate: Sri Venkateswara Junior College with 93.5%</li>
+                <li>B.Tech: Currently pursuing at Ravindra College of Engineering for Women with 81.66%</li>
+            </ul>
+            <div>
+                <h4>Certifications</h4>
+                <ul>
+                    <li>Certified Java and Python: Completed comprehensive courses on Java and Python programming.</li>
+                    <li>Data Structures & Algorithms: Completed a specialized course in data structures and algorithms from SmartInterviews.</li>
+                    <li>AWS Architecture: A course covering the fundamentals of designing and deploying scalable and secure applications on AWS.</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Courses</h4>
+                <ul>
+                    <li>Artificial Intelligence with Python: A comprehensive course on implementing AI algorithms and techniques using Python.</li>
+                    <li>Data Structures and Algorithms: An in-depth course covering essential concepts and techniques in data structures and algorithms.</li>
+                    <li>Soft Skills: Effective communication, teamwork, problem-solving, and time management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="collapsible-content">
+            <h2>Projects</h2>
+            <div>
+                <h3>Banking System</h3>
+                <p>Developed a comprehensive banking system to manage customer accounts, transactions, and other banking operations. The system supports features such as account creation, deposit, withdrawal, and transaction history management.</p>
+                <p>Technologies Used: Java, MySQL, HTML, CSS</p>
+                <p>Role: Lead Developer - Designed and implemented core functionalities, including account management and transaction processing.</p>
+                <p>Key Achievements: Successfully implemented secure transaction handling and user authentication, enhancing overall system reliability.</p>
+            </div>
+            <div>
+                <h3>Library Management System</h3>
+                <p>Designed and implemented a system for managing library books, users, and borrowing activities. Features include book check-in/check-out, user registration, and overdue notifications.</p>
+                <p>Technologies Used: Python, SQLite, Flask, HTML, CSS</p>
+                <p>Role: Developer - Developed various modules, including user registration and book management.</p>
+                <p>Key Achievements: Implemented efficient book tracking and overdue notifications to enhance library operations.</p>
+            </div>
+            <div>
+                <h3>Resume Builder</h3>
+                <p>This project is a web application designed to help users create professional resumes. It allows users to input personal information, skills, experiences, and download their resumes in various formats.</p>
+                <p>Technologies Used: JavaScript, HTML, CSS</p>
+                <p>Role: Full Stack Developer - Implemented both the frontend and backend of the application, including the resume template generation and export functionality.</p>
+                <p>Key Achievements: Developed a user-friendly interface and export options, facilitating easy resume creation and customization.</p>
+            </div>
+            <div>
+                <h3>Image Recognition System</h3>
+                <p>Created a system capable of recognizing and classifying images using machine learning algorithms. The system identifies objects in images and categorizes them into predefined classes.</p>
+                <p>Technologies Used: Python, TensorFlow</p>
+                <p>Role: Data Scientist - Developed and trained the image recognition model, fine-tuning the algorithm to achieve high accuracy.</p>
+                <p>Key Achievements: Achieved high classification accuracy and demonstrated potential real-world applications in security and automation.</p>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="collapsible-content">
+            <h2>Resume</h2>
+            <p>Upload and View Resume:</p>
+            <input type="file" id="resume-file" accept=".pdf, .doc, .docx">
+            <button onclick="viewResume()">View Resume</button>
+            <div id="resume-preview"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="collapsible-content">
+            <h2>Contact</h2>
+            <p>You can reach me via the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:sn9084395@gmail.com">sn9084395@gmail.com</a></li>
+                <li>Phone: <a href="tel:+917382186529">+91 73821 86529</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/navya-seelam-287b90292" target="_blank">linkedin.com/in/navya-seelam-287b90292</a></li>
+                <li>GitHub: <a href="https://github.com/SeelamNavya123" target="_blank">github.com/SeelamNavya123</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seelam Navya. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    document.querySelectorAll('.collapsible-content').forEach(sec => sec.style.display = 'none');
+                    content.style.display = 'block';
+                }
+            });
+        });
+
+        function viewResume() {
+            const fileInput = document.getElementById('resume-file');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const fileUrl = URL.createObjectURL(file);
+                const previewDiv = document.getElementById('resume-preview');
+                previewDiv.innerHTML = `
+                    <iframe src="${fileUrl}" frameborder="0"></iframe>
+                    <p>Viewing: ${file.name}</p>
+                `;
+            } else {
+                alert('Please upload a resume file first.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

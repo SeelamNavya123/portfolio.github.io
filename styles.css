@@ -1,0 +1,124 @@
+/* General styles for body and other elements */
+body {
+    font-family: Arial, sans-serif;
+    background: url('C:/Users/navya/Desktop/overhead-view-cell-phone-laptop-cactus-plant-files-black-background_23-2147916416.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header is on top of other content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.25rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main.container {
+    margin-top: 80px; /* To avoid overlap with fixed header */
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+    border-radius: 8px; /* Rounded corners for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: rgb(38, 25, 218); /* Default color for all h2 headings */
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: none; /* Remove underline */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Specific style for the 'About Me' heading */
+#about-heading {
+    color: #1d4ed8; /* Blue color for 'About Me' heading */
+}
+
+section p, section ul {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.collapsible-header {
+    cursor: pointer;
+    background: none; /* Remove background color */
+    color: white; /* White text color */
+    padding: 0.5rem;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border-radius */
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.collapsible-header:hover {
+    color: #ddd; /* Lighten text color on hover */
+}
+
+.collapsible-content {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+#resume-preview iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+
+
+
+
+
+
+
